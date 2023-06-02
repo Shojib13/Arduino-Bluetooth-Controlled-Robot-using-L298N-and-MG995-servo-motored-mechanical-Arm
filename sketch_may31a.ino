@@ -32,33 +32,33 @@ void loop() {
   digitalWrite(4, LOW);
   digitalWrite(5, LOW);
  }
- else if(state == 'F'){
-  //forward
+ else if(state == 'B'){
+  //backward
   digitalWrite(2, HIGH);
   digitalWrite(3, LOW);
   digitalWrite(4, LOW);
   digitalWrite(5, HIGH);
  }
- else if(state == 'B'){
-  //backward
+ else if(state == 'F'){
+  //forward
   digitalWrite(2, LOW);
   digitalWrite(3, HIGH);
   digitalWrite(4, HIGH);
   digitalWrite(5, LOW);
  }
- else if(state == 'L'){
+ else if(state == 'R'){
   //right
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, LOW);
+ }
+ else if(state == 'L'){
+  //left
   digitalWrite(2, LOW);
   digitalWrite(3, HIGH);
   digitalWrite(4, LOW);
   digitalWrite(5, LOW);
- }
- else if(state == 'R'){
-  //left
-  digitalWrite(2, LOW);
-  digitalWrite(3, LOW);
-  digitalWrite(4, LOW);
-  digitalWrite(5, HIGH);
  }
 
  if(state == 'W'){
